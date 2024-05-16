@@ -1,0 +1,80 @@
+.container1{
+    background-image: url("https://www.fitnessfirst.co.uk/media/vmkjyzet/fitnessfirst-hammersmith-apr2023-327h.jpg?width=1920&height=1080&format=webp&quality=80&v=1d97cef33ee6630");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    text-align: center;
+   
+}
+.subCont{
+    padding: 200px 0px 0px 0px;
+    /* margin: 200px; */
+    line-height: 2.5rem;
+}
+.subCont h1{
+    font-size: 2.5rem;
+   font-weight: bolder;
+    color: rgb(247, 247, 250);
+
+}
+button{
+    padding: 20px;
+    font-size: larger;
+    margin-top: 40px;
+    background-color: orangered;
+    border-radius: 10px;
+}
+.gymContainer{
+    /* border: 2px solid; */
+    width: 30%;
+    margin: 10px;
+    padding: 20px 10px;
+    box-shadow: 5px 5px 5px 5px;
+}
+.gymContainer img{
+    width: 100px;
+}
+.gymContainer h3{
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.container{
+    /* border: 2px solid; */
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 30%; */
+ 
+    justify-content: center;
+    align-items: center;
+}
+.cards{
+    /* border: 2px solid; */
+    width: 80%;
+    box-shadow: 10px 5px 5px 5px;
+    margin: 20px;
+   
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards img{
+    width: 100%;
+    /* height: 500px; */
+}
+.text{
+    /* border: 2px solid; */
+    display: flex;
+    gap:10px;
+    text-align: center;
+    align-items: center;
+}
+.text span{
+    border: 2px solid;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
