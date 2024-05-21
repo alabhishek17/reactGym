@@ -1,7 +1,9 @@
 import style from "./css_exercise.module.css"
 import Data from "../data"
+import { useNavigate } from "react-router-dom";
 import { useState, useEffect} from "react";
 function Exerises(){
+    const navigate=useNavigate();
 const {FetachData}=Data();
 const [allData,setAllData]=useState([]);
 
@@ -13,13 +15,16 @@ useEffect(()=>{
 
 console.log(allData);
 
+const handleDisplayDetails=(id)=>{
+    navigate(`/ Details/${id}`)
+}
 
 return(
     <div className={style.container}>
         {
             allData.map((iteam,id)=>(
-                <div key={id} >
-                    <div className={style.cards}>
+                <div key={id} onClick={()=>handleDisplayDetails(iteam.id)}>
+                    <div className={style.cards} >
                         <img src={iteam.gifUrl} alt="" />
                         <div className={style.text}>
                           <span style={{backgroundColor:"GrayText"}}>{iteam.bodyPart}</span>
@@ -34,4 +39,4 @@ return(
     </div>
 )
 }
-export default Exerises
+export default Exerises;
